@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,285 +7,516 @@
 
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
 
-        body {
+        body{
             font-family: sans-serif;
-            background: #ffffff;
-            color: #222;
+            background:#ffffff;
+            color:#222;
         }
 
 
-        .container {
-            width: 1100px;
-            margin: auto;
+        .container{
+            width:1100px;
+            margin:auto;
         }
 
 
-        a {
-            text-decoration: none;
-            color: black;
+        a{
+            text-decoration:none;
+            color:black;
         }
 
 
-
-
-        nav {
-            padding: 20px 0;
-        }
-
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-
-        nav ul {
-            display: flex;
-            gap: 30px;
-        }
-
-
-        nav button {
-            padding: 10px 20px;
-            background: #2f6df6;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        ul{
+            list-style:none;
         }
 
 
 
 
-        .hero {
-            height: 500px;
-            background: url("./assets/banner.jpg");
-            background-size: cover;
-            background-position: center;
-            position: relative;
+        nav{
+            padding:20px 0;
         }
 
 
-        .overlay {
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .65);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        nav .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
         }
 
 
-        .hero h1 {
-            color: white;
-            font-size: 58px;
-            margin-bottom: 20px;
+        .logo{
+            font-size:22px;
+            font-weight:bold;
+            display:flex;
+            align-items:center;
+            gap:10px;
         }
 
 
-        .hero p {
-            color: #ddd;
-            width: 650px;
-            margin: auto;
-            line-height: 28px;
-            margin-bottom: 30px;
+        nav ul{
+            display:flex;
+            gap:30px;
         }
 
 
-        .hero button {
-            padding: 14px 30px;
-            background: #2f6df6;
-            border: none;
-            color: white;
-            border-radius: 5px;
+        nav button{
+            padding:10px 20px;
+            background:#2f6df6;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
         }
 
 
 
 
-        .speakers {
-            padding: 80px 0;
+        .hero{
+            height:500px;
+            background:url("./assets/banner.jpg");
+            background-size:cover;
+            background-position:center;
+            position:relative;
         }
 
 
-        .title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 50px;
+        .overlay{
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,.65);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
         }
 
 
-        .speaker-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
+        .hero h1{
+            color:white;
+            font-size:58px;
+            margin-bottom:20px;
         }
 
 
-        .card {
-            border: 1px solid #ddd;
+        .hero p{
+            color:#ddd;
+            width:650px;
+            margin:auto;
+            line-height:28px;
+            margin-bottom:30px;
         }
 
 
-        .card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-
-        .card .text {
-            padding: 18px;
-        }
-
-
-        .label {
-            color: #2f6df6;
-            font-size: 13px;
-            margin-bottom: 10px;
-        }
-
-
-        .card h3 {
-            margin-bottom: 8px;
-        }
-
-
-
-
-        .pricing {
-            padding-bottom: 80px;
-        }
-
-
-        .pricing p {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #666;
-        }
-
-
-        .price-box {
-            display: flex;
-            gap: 25px;
-        }
-
-
-        .price-card {
-            flex: 1;
-            border: 1px solid #ddd;
-            padding: 30px;
-        }
-
-
-        .price-card h3 {
-            margin-bottom: 10px;
-        }
-
-
-        .price-card span {
-            margin-bottom: 20px;
-        }
-
-
-        .price-card li {
-            margin-bottom: 10px;
-        }
-
-
-        .price-card button {
-            margin-top: 20px;
-            width: 100%;
-            padding: 12px;
-            border: none;
-            background: #2f6df6;
-            color: white;
-        }
-
-
-        .pro {
-            background: #0d1b3d;
-            color: white;
-        }
-
-
-        .pro button {
-            background: #2f6df6;
+        .hero button{
+            padding:14px 30px;
+            background:#2f6df6;
+            border:none;
+            color:white;
+            border-radius:5px;
         }
 
 
 
 
-       
+        .speakers{
+            padding:80px 0;
+        }
+
+
+        .title{
+            text-align:center;
+            font-size:34px;
+            margin-bottom:50px;
+        }
+
+
+        .speaker-box{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:25px;
+        }
+
+
+        .card{
+            border:1px solid #ddd;
+        }
+
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+
+        .card .text{
+            padding:18px;
+        }
+
+
+        .label{
+            color:#2f6df6;
+            font-size:13px;
+            margin-bottom:10px;
+        }
+
+
+        .card h3{
+            margin-bottom:8px;
+        }
+
+
+
+
+        .pricing{
+            padding-bottom:80px;
+        }
+
+
+        .pricing p{
+            text-align:center;
+            margin-bottom:40px;
+            color:#666;
+        }
+
+
+        .price-box{
+            display:flex;
+            gap:25px;
+        }
+
+
+        .price-card{
+            flex:1;
+            border:1px solid #ddd;
+            padding:30px;
+        }
+
+
+        .price-card h3{
+            margin-bottom:10px;
+        }
+
+
+        .price-card span{
+            margin-bottom:20px;
+        }
+
+
+        .price-card li{
+            margin-bottom:10px;
+        }
+
+
+        .price-card button{
+            margin-top:20px;
+            width:100%;
+            padding:12px;
+            border:none;
+            background:#2f6df6;
+            color:white;
+        }
+
+
+        .pro{
+            background:#0d1b3d;
+            color:white;
+        }
+
+
+        .pro button{
+            background:#2f6df6;
+        }
+
+
+
+
+        .newsletter{
+            background:#f2ebff;
+            text-align:center;
+            padding:70px 20px;
+            margin-bottom:80px;
+        }
+
+
+        .newsletter h2{
+            color:#6a35ff;
+            margin-bottom:15px;
+        }
+
+
+        .newsletter p{
+            margin-bottom:25px;
+            color:#555;
+        }
+
+
+        .newsletter input{
+            padding:12px;
+            width:250px;
+        }
+
+
+        .newsletter button{
+            padding:12px 20px;
+            background:#6a35ff;
+            border:none;
+            color:white;
+        }
+
+
+
+
+        footer{
+            background:#08111f;
+            color:white;
+            padding:30px 0;
+        }
+
+
+        .footer-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+
+        .social a{
+            color:white;
+            margin-left:20px;
+        }
+
+
+        hr{
+            margin:20px 0;
+            border:1px solid #24334b;
+        }
+
+
+        .copy{
+            text-align:center;
+            color:#bbb;
+        }
+
+
     </style>
 </head>
-
 <body>
 
 
-    <nav>
-        <div class="container">
+<nav>
+    <div class="container">
 
 
-            <div class="logo">
-                <img src="./assets/logo.png" alt="" width="40" height="40">
-                <div>DEVCONF <br>2026</div>
-            </div>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="" width="40" height="40">
+            <div>DEVCONF <br>2026</div>
+        </div>
 
 
-            <ul>
-                <li><a href="#">Speakers</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Tracks</a></li>
-                <li><a href="#">Venue</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+        <ul>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+
+        <button>Register Now</button>
+
+
+    </div>
+</nav>
+
+
+<section class="hero">
+
+
+    <div class="overlay">
+
+
+        <div>
+
+
+            <h1>Code. <i>Connect.</i> Create</h1>
+
+
+            <p>
+                Join developers, designers and technology enthusiasts for two days
+                of inspiring talks, networking and hands-on learning at DevConf 2026.
+            </p>
 
 
             <button>Register Now</button>
 
 
         </div>
-    </nav>
 
 
-    <section class="hero">
+    </div>
 
 
-        <div class="overlay">
+</section>
 
 
-            <div>
+<section class="speakers">
 
 
-                <h1>Code. <i>Connect.</i> Create</h1>
+    <div class="container">
 
 
-                <p>
-                    Join developers, designers and technology enthusiasts for two days
-                    of inspiring talks, networking and hands-on learning at DevConf 2026.
-                </p>
+        <h2 class="title">Meet the Speakers</h2>
 
 
-                <button>Register Now</button>
+        <div class="speaker-box">
+
+
+            <div class="card">
+                <img src="./assets/andrej.png" alt="">
+                <div class="text">
+                    <div class="label">AI / ML</div>
+                    <h3>Andrej Karpathy</h3>
+                    <p>Pretraining team, Anthropic</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./assets/demis.png" alt="">
+                <div class="text">
+                    <div class="label">Cloud & DevOps</div>
+                    <h3>Demis Hassabis</h3>
+                    <p>Co-Founder and CEO, Google DeepMind </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./assets/gary.png" alt="">
+                <div class="text">
+                    <div class="label">Frontend</div>
+                    <h3>Gary Marcus</h3>
+                    <p>Staff Engineer, Vercel</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./assets/mustafa.png" alt="">
+                <div class="text">
+                    <div class="label">Security</div>
+                    <h3>Mustafa Suleyman</h3>
+                    <p>CEO of Microsoft AI</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<section class="pricing">
+
+
+    <div class="container">
+
+
+        <h2 class="title">Secure Your Spot</h2>
+
+
+        <p>Choose the ticket that fits your conference experience.</p>
+
+
+        <div class="price-box">
+
+
+            <div class="price-card">
+
+
+                <h3>Standard</h3>
+
+
+                <h2>$399</h2>
+                <span>Per Person</span></br></br>
+
+
+                <ul>
+                    <li>Access to all 3 conference days</li>
+                    <li>48 curated technical talks</li>
+                    <li>2 workshop sessions</li>
+                    <li>Networking lunch & coffee breaks</li>
+                    <li>Conference swag bag</li>
+                    <li>Digital recordings (30 days)</li>
+                </ul>
+
+
+                <button>Get Started</button>
+
+
+            </div>
+
+
+            <div class="price-card pro">
+
+
+                <h3>Pro</h3>
+
+
+                <h2>$749</h2>
+                <span>Per Person</span></br></br>
+
+
+                <ul>
+                    <li>Everything in Standard</li>
+                    <li>Unlimited workshop access</li>
+                    <li>Speaker meet & greet</li>
+                    <li>VIP networking dinner</li>
+                    <li>Lifetime recording access</li>
+                    <li>1-on-1 mentorship (30 min)</li>
+                </ul>
+
+
+                <button>Get Pro</button>
+
+
+            </div>
+
+
+            <div class="price-card">
+
+
+                <h3>Team</h3>
+
+
+                <h2>$5,999</h2>
+                <span>Per Person</span></br></br>
+
+
+                <ul>
+                    <li>Everything in Pro (10 seats)</li>
+                    <li>Dedicated team lounge access</li>
+                    <li>Private workshop booking</li>
+                    <li>Company logo on event page</li>
+                    <li>Recruitment booth (1 day)</li>
+                    <li>Priority customer support</li>
+                </ul>
+
+
+                <button>Contact Us</button>
 
 
             </div>
@@ -295,175 +525,69 @@
         </div>
 
 
-    </section>
+    </div>
 
 
-    <section class="speakers">
+</section>
 
 
-        <div class="container">
+<section class="newsletter">
 
 
-            <h2 class="title">Meet the Speakers</h2>
+    <h2>Stay Updated</h2>
 
 
-            <div class="speaker-box">
+    <p>
+        Subscribe to receive conference news, speaker announcements,
+        and event reminders before DevConf 2026 begins.
+    </p>
 
 
-                <div class="card">
-                    <img src="./assets/andrej.png" alt="">
-                    <div class="text">
-                        <div class="label">AI / ML</div>
-                        <h3>Andrej Karpathy</h3>
-                        <p>Pretraining team, Anthropic</p>
-                    </div>
-                </div>
+    <input type="email" placeholder="Enter your email">
 
 
-                <div class="card">
-                    <img src="./assets/demis.png" alt="">
-                    <div class="text">
-                        <div class="label">Cloud & DevOps</div>
-                        <h3>Demis Hassabis</h3>
-                        <p>Co-Founder and CEO, Google DeepMind </p>
-                    </div>
-                </div>
+    <button>Subscribe</button>
 
 
-                <div class="card">
-                    <img src="./assets/gary.png" alt="">
-                    <div class="text">
-                        <div class="label">Frontend</div>
-                        <h3>Gary Marcus</h3>
-                        <p>Staff Engineer, Vercel</p>
-                    </div>
-                </div>
+</section>
 
 
-                <div class="card">
-                    <img src="./assets/mustafa.png" alt="">
-                    <div class="text">
-                        <div class="label">Security</div>
-                        <h3>Mustafa Suleyman</h3>
-                        <p>CEO of Microsoft AI</p>
-                    </div>
-                </div>
+<footer>
 
 
+    <div class="container">
+
+
+        <div class="footer-top">
+
+
+            <h3>DEVCONF 2026</h3>
+
+
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
             </div>
 
 
         </div>
 
 
-    </section>
+        <hr>
 
 
-    <section class="pricing">
+        <p class="copy">
+            © 2026 DevConf. All rights reserved.
+        </p>
 
 
-        <div class="container">
+    </div>
 
 
-            <h2 class="title">Secure Your Spot</h2>
-
-
-            <p>Choose the ticket that fits your conference experience.</p>
-
-
-            <div class="price-box">
-
-
-                <div class="price-card">
-
-
-                    <h3>Standard</h3>
-
-
-                    <h2>$399</h2>
-                    <span>Per Person</span></br></br>
-
-
-                    <ul>
-                        <li>Access to all 3 conference days</li>
-                        <li>48 curated technical talks</li>
-                        <li>2 workshop sessions</li>
-                        <li>Networking lunch & coffee breaks</li>
-                        <li>Conference swag bag</li>
-                        <li>Digital recordings (30 days)</li>
-                    </ul>
-
-
-                    <button>Get Started</button>
-
-
-                </div>
-
-
-                <div class="price-card pro">
-
-
-                    <h3>Pro</h3>
-
-
-                    <h2>$749</h2>
-                    <span>Per Person</span></br></br>
-
-
-                    <ul>
-                        <li>Everything in Standard</li>
-                        <li>Unlimited workshop access</li>
-                        <li>Speaker meet & greet</li>
-                        <li>VIP networking dinner</li>
-                        <li>Lifetime recording access</li>
-                        <li>1-on-1 mentorship (30 min)</li>
-                    </ul>
-
-
-                    <button>Get Pro</button>
-
-
-                </div>
-
-
-                <div class="price-card">
-
-
-                    <h3>Team</h3>
-
-
-                    <h2>$5,999</h2>
-                    <span>Per Person</span></br></br>
-
-
-                    <ul>
-                        <li>Everything in Pro (10 seats)</li>
-                        <li>Dedicated team lounge access</li>
-                        <li>Private workshop booking</li>
-                        <li>Company logo on event page</li>
-                        <li>Recruitment booth (1 day)</li>
-                        <li>Priority customer support</li>
-                    </ul>
-
-
-                    <button>Contact Us</button>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-    
+</footer>
 
 
 </body>
-
 </html>
+
